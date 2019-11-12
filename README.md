@@ -1,2 +1,2 @@
-# someonelikeyou.github.io
+# someonelikeyou
 Hey!

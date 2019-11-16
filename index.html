@@ -1,42 +1,57 @@
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <title align="center">普通高等男朋友招生考试试卷</title>
-    <meta name="keyword" content="男朋友试卷"/>
-    <meta name="description" content="检查你的男朋友是否合格">
-    <meta name="author" content="zw-liu">
-  </head>
-  <!-- 基本信息 -->
-  <body>
-    <h1 align="center">普通高等男朋友招生考试试卷(江苏卷)</h1>
-    <h4 align="left">
-	    <img src="小猫哼哼.gif" title="这是崔超楠"/>
-		答题人:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      答题人女友：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      答题时间：90分钟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      总分：100
-      </h4>
-    <hr width="100%"/>
-	<!-- 注意事项 -->
-      <ol>
-        <h4>        
-		<dt>注意事项：<dt>
-		<li>、本卷为关于女友的考试试卷，不得擅自涂抹修改，不得交白卷。</li>
-		<li>、答题者必须遵守考试纪律，尊重考试，不得作弊，考试违纪者，视情节轻重，处以不吃零食、不打游戏一星期的惩罚。</li>
-		<li>、本次答案解释权在答题人女友手中，对成绩不满者可以咨询。</li>
-		<li>、出卷亩的在于培养两人的感情，具有娱乐性，切勿上纲上线。</li>
-		</h4>
-    </ol>
-	  <b><h4>1、选择题：本题共有10小题，每题2分，共20分，在每小题给出的四个选项中，有单个或多个选项，少选且未选错得1分。</h4></b>
-	 	&nbsp;&nbsp;<h5>1、以下哪一选项是女朋友净身高（）</h5>
-	<ol type="A">
-		<h4>
-			<li>、158cm及以下</li>
-			<li>、159cm-165cm</li>
-			<li>、166cm-170cm</li>
-			<li>、170cm以上</li>
-		</h4>
-		
-	</ol>
-  </body>
-</html>
+<canvas id="mom" style="background:#111"></canvas>
+  <script type="text/javascript">
+    window.onload = function(){
+//获取画布对象
+        var canvas = document.getElementById("mom");
+//获取画布的上下文
+        var context =canvas.getContext("2d");
+//获取浏览器屏幕的宽度和高度
+        var W = window.innerWidth;
+        var H = window.innerHeight;
+//设置canvas的宽度和高度
+        canvas.width = W;
+        canvas.height = H;
+//每个文字的字体大小
+        var fontSize = 16;
+//计算列
+        var colunms = Math.floor(W /fontSize);
+//记录每列文字的y轴坐标
+        var drops = [];
+//给每一个文字初始化一个起始点的位置
+for(var i=0;i<colunms;i++){
+            drops.push(0);
+        }
+//运动的文字
+        var str ="刘滋伟 ❥ 崔超楠";
+//4:fillText(str,x,y);原理就是去更改y的坐标位置
+//绘画的函数
+        function draw(){
+            context.fillStyle = "rgba(0,0,0,0.05)";
+            context.fillRect(0,0,W,H);
+//给字体设置样式
+            context.font = "700 "+fontSize+"px  微软雅黑";
+//给字体添加颜色
+            context.fillStyle ="#00cc33";//可以rgb,hsl, 标准色，十六进制颜色
+//写入画布中
+for(var i=0;i<colunms;i++){
+                var index = Math.floor(Math.random() * str.length);
+                var x = i*fontSize;
+                var y = drops[i] *fontSize;
+                context.fillText(str[index],x,y);
+//如果要改变时间，肯定就是改变每次他的起点
+if(y >= canvas.height && Math.random() > 0.99){
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        };
+        function randColor(){
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+return "rgb("+r+","+g+","+b+")";
+        }
+        draw();
+        setInterval(draw,30);
+    };
+</script>

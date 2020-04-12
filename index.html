@@ -1,32 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>点名批评臭猪楠楠</title>
-    <link rel="chortcut icon" href="myPig.jpg" type="image/jpg"/>
-    <link rel="stylesheet" href="myCSS.css" type="text/css"/>
-</head>
-<body>
-    <div id="document">
-        <nav>
-            <h1>2020年第一次家长会</h1>
-        </nav>  
-        <table id="Tb" >
-            <tr><th>姓名</th> <th >分数</th></tr>
-            <tr><td>刘滋伟</td><td>100</td></tr>
-            <tr><td>崔超楠</td><td><span>47</span></td></tr>
-            <tr><td>刘晶晶</td><td>61</td></tr>
+body{
+    background:#202020;
 
-        </table>
-        <main>
-            <p>　 　
-               我在这里给各位家长分析下，我们班的学生成绩情况。
-            </p>
-            <p>第一名是刘滋伟同学，也就是我。我认为他拿到了<span>第一名</span>实至名归，因为他有着勤奋刻苦的精神。第二名是刘晶晶同学，凭借优异的成绩夺得了第二名。</p>
-        </main>
-        <footer>
-            <h1>底部信息</h1>
-        </footer>
-    </div>
-</body>
-</html>
+}
+#Tb th,td{
+    text-align: center;
+    border: thin solid black;
+    background: grey;
+    color: white;
+    padding: 4px;
+}
+td > span{
+    color: red;
+}
+#document{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    background:#202020;
+    font-family:microsoft yahei,wenquanyi micro hei,sans-serif !important;
+}
+nav,footer{
+    background: #494949;
+    display: flex;
+    justify-content:center;
+}
+nav>h1{
+    color:#82fcfd;
+    text-shadow:1px 1px 4px #00000080;
+}
+main{
+    color: #bdbdbd;
+    flex: auto;
+}
+footer{
+    flex-shrink:0;
+}
+*{
+    margin: 0;
+}
+h1{
+    padding: 15px;
+}
+p{
+    background:white;
+    color:black;
+}
+
+footer>h1{
+    font-size: 10px;
+    color: #82fcfd;
+    text-shadow: 1px 1px 4px #00000080;
+}

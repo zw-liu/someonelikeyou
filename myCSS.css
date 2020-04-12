@@ -9,7 +9,7 @@ body{
     color: white;
     padding: 4px;
 }
-td > span{
+td > span,p>span{
     color: red;
 }
 #document{

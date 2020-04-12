@@ -40,8 +40,12 @@ footer{
 *{
     margin: 0px;
 }
-h1,p{
+h1{
     padding: 15px;
+}
+p{
+    background：grey;
+    color:white;
 }
 
 footer>h1{

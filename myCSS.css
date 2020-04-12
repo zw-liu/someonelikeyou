@@ -3,14 +3,16 @@ body{
     background:#202020;
 
 }
-#Tb td{
-    background:grey;
-    color:white;
-    border：thin solid black;
-    padding:4px;
+
+#Tb th,td{
+    text-align: center;
+    border: thin solid black;
+    background: grey;
+    color: white;
+    padding: 4px;
 }
-td>span{
-    color:red;
+td > span{
+    color: red;
 }
 #document{
     height: 100%;

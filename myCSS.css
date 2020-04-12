@@ -1,0 +1,40 @@
+
+body{
+    background:#202020;
+
+}
+#document{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    background:#202020;
+    font-family:microsoft yahei,wenquanyi micro hei,sans-serif !important;
+}
+nav,footer{
+    background: #494949;
+    display: flex;
+    justify-content:center;
+}
+nav>h1{
+     color:#82fcfd;
+     text-shadow:1px 1px 4px #00000080;
+ }
+main{
+    color: #bdbdbd;
+    flex: auto;
+}
+footer{
+    flex-shrink:0;
+}
+*{
+    margin: 0px;
+}
+h1,p{
+    padding: 15px;
+}
+
+footer>h1{
+    color: #82fcfd;
+    text-shadow: 1px 1px 4px #00000080;
+}

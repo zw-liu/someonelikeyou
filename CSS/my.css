@@ -1,0 +1,70 @@
+body{
+
+    background:  url("../Images/formpc.jpg") no-repeat;
+    background-size:1500px 1000px;
+}
+.login_box{
+    position:fixed;
+    left:50%;
+    top:250px;
+    width:550px;
+    height:300px;
+    margin-left:-250px;
+    border-radius:40px;
+    box-shadow: 8px 8px 50px #888;
+    border:1px solid #666;
+    background: #e1ffeb;
+    opacity:0.5;
+    background-size: 550px 400px;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff546d;
+    font-family: 幼圆;
+ }
+form>div{
+    text-align: right;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+div>label{
+    margin: 0px;
+    font-size:20px;
+    font-weight: bold;
+    color:black;
+    background-color:#ff2d28;
+    opacity:1;
+}
+div>input[type="text"],div>input[type="password"]{
+    width:250px;
+    height:30px;
+    background:none;
+
+    outline:none;
+    border-radius:10px;
+}
+
+div>input[type="button"]{
+    width:100px;
+    position: absolute;
+    right: 100px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0);
+}
+input::-webkit-input-placeholder{
+color:black;
+}
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color:black;
+}
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: black;
+}
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color:black;
+}

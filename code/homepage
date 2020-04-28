@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="liushui" />
+    <link rel="shortcut icon" href="../Images/bpic.ico" type="image/icon"/>
+    <title>欢迎回家</title>
+
+    <style>
+        body{
+            background: #78ffd6 url("../Images/wife.jpg") no-repeat ;
+        }
+        table{
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            text-align: center;
+        }
+        .c1>td{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+<h6 style="color: #65ffca;text-align:left;position:absolute; top: 30%">点击图片进入分区</h6>
+<table>
+    <tr class="c1">
+        <td><a href="WE.html"><img src="../Images/we.jpg"         width="40%" title="WE" ></a></td>
+        <td><a href="http://www.baidu.com"><img src="../Images/pinkheart.jpeg" width="40%" title="我的钟爱"></a></td>
+        <td><a href="realtime.html">       <img src="../Images/virus.jpg"      width="40%" title="疫情实时"></a></td>
+    </tr>
+    <tr style="color:#ff217b;font-size: 20px;font-family:'幼圆';font-weight: bold">
+        <td>WE</td>
+        <td>我的钟爱</td>
+        <td>疫情实时人数地图</td>
+    </tr>
+    <tr style="height: 400px;color: #9d35ff;font-size: 40px;font-family:楷体"><td colspan="3">淡然执手度清平，山盟不弃白发生。</td></tr>
+</table>
+</body>
+</html>

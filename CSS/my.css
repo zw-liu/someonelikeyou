@@ -46,7 +46,7 @@ div>input[type="text"],div>input[type="password"]{
     border-radius:10px;
 }
 
-div>input[type="button"]{
+#button{
     width:100px;
     position: absolute;
     right: 100px;

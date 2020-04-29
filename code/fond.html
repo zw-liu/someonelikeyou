@@ -6,38 +6,61 @@
     <title>我的钟爱</title>
     <style>
         body{
+            position:static;
             background-color: rgba(122,130,255,0.48);
             opacity: 0.8;
+            margin: 0px;
         }
         td{
             border: 1px solid #ff6387;
             text-align: center;
         }
+        #objectaotu{
+            position:relative;
+            left: 15%;
+            height: 200px;
+        }
+        #objectpink{
+            position:relative;
+            left: 23%;
+            height: 200px;
+        }
+        #objectguais{
+            position: relative;
+            left: 30%;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
-<table  cellpadding="0px" cellspacing="0px" >
-    <tr>
-        <td style="color:rgba(95,166,255,0.63); font-weight:bolder; font-size: 50px;font-family:幼圆; " rowspan="2" width="400px">即将毕业的小崔</td>
-        <td style="border-bottom: none;"><object width="380px"  data="../Images/school1.jpg"/> </td>
-        <td style="color:#fff770; font-weight: bolder; font-size: 50px;font-family:幼圆; " rowspan="2" width="400px">在上海</td>
-        <td  style="border-bottom: none;"><object width="380px"" data="../Images/we.jpg"/></td>
-    </tr>
-    <tr>
-        <td style="border-top: none;"><object width="400px"  data="../Images/school2.jpg"/></td>
-        <td style="border-top: none;"><object width="400px"  data="../Images/back.jpg"/></td>
-     </tr>
-    <tr>
-        <td rowspan="2" style="color:#ffbb7c; font-weight:bolder; font-size: 50px;font-family:幼圆; ">海洋馆</td>
-        <td style="border-bottom: none;"><object width="400px"  data="../Images/we2.jpg"/></td>
-        <td style="color:#fff316; font-weight:bolder; font-size: 50px;font-family:幼圆; ">怕冷的小猪</td>
-        <td><object width="400px"  data="../Images/coolpig.jpg"/></td>
-    </tr>
-    <tr>
-        <td style="border-top: none;"><object width="400px"  data="../Images/qier.jpg"/></td>
-        <td style="color:#2dff59; font-weight:bolder; font-size: 50px;font-family:幼圆; ">耍酷的小猪</td>
-        <td><object width="400px"  data="../Images/hand.jpg"/></td>
-    </tr>
-</table>
+<object id="objectaotu" data="../Images/automan.jpeg"></object>
+<object id="objectpink" data="../Images/pinkheart.jpeg"></object>
+<object id="objectguais"  data="../Images/guais.jpeg"></object>
+
+    <table style="position: absolute;top: 200px;"  cellpadding="0px" cellspacing="0px" >
+        <tr>
+            <td style="color:rgba(95,166,255,0.63); font-weight:bolder; font-size: 50px;font-family:幼圆; " rowspan="2" width="400px">即将毕业的小崔</td>
+            <td style="border-bottom: none;"><object width="380px"  data="../Images/school1.jpg"/> </td>
+            <td style="color:#fff770; font-weight: bolder; font-size: 50px;font-family:幼圆; " rowspan="2" width="400px">在上海</td>
+            <td  style="border-bottom: none;"><object width="380px"" data="../Images/we.jpg"/></td>
+        </tr>
+        <tr>
+            <td style="border-top: none;"><object width="400px"  data="../Images/school2.jpg"/></td>
+            <td style="border-top: none;"><object width="400px"  data="../Images/back.jpg"/></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="color:#ffbb7c; font-weight:bolder; font-size: 50px;font-family:幼圆; ">海洋馆</td>
+            <td style="border-bottom: none;"><object width="400px"  data="../Images/we2.jpg"/></td>
+            <td style="color:#fff316; font-weight:bolder; font-size: 50px;font-family:幼圆; ">怕冷的小猪</td>
+            <td><object width="400px"  data="../Images/coolpig.jpg"/></td>
+        </tr>
+        <tr>
+            <td style="border-top: none;"><object width="400px"  data="../Images/qier.jpg"/></td>
+            <td style="color:#2dff59; font-weight:bolder; font-size: 50px;font-family:幼圆; ">耍酷的小猪</td>
+            <td><object width="400px"  data="../Images/hand.jpg"/></td>
+        </tr>
+    </table>
+
+
 </body>
 </html>
